@@ -1,0 +1,26 @@
+{
+  "name": "spurlab-skills",
+  "description": "SpurLab notebook analyst skills. Connect a file, warehouse, lakehouse, or REST API through notebook tools, then query and name the live SQL.",
+  "version": "0.1.0",
+  "author": {
+    "name": "getspur",
+    "url": "https://github.com/getspur"
+  },
+  "repository": "https://github.com/getspur/spurlab-skills",
+  "homepage": "https://github.com/getspur/spurlab-skills",
+  "license": "MIT",
+  "keywords": [
+    "spurlab",
+    "jute",
+    "notebook",
+    "duckdb",
+    "sql",
+    "iceberg",
+    "delta",
+    "postgres",
+    "bigquery",
+    "snowflake",
+    "rest",
+    "datasource"
+  ]
+}
