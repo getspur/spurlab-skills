@@ -4,6 +4,8 @@ description: >
   Use when writing analytical DuckDB SQL in a SpurLab cell: aggregation shapes,
   latest-row, top-N, dedup, running totals, period-over-period, pivot, sampling
   — or when porting SQL from another engine.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # SQL patterns

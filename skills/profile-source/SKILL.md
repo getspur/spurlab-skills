@@ -3,6 +3,8 @@ name: profile-source
 description: >
   Use when a SpurLab notebook datasource is already connected and the question
   is its schema, columns, invoke syntax, or a bounded sample.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Profile source

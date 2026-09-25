@@ -4,6 +4,8 @@ description: >
   Use when analyzing, querying, profiling, or connecting data in a SpurLab or
   Jute notebook: a file, Postgres, MySQL, SQL Server, BigQuery, Snowflake,
   Iceberg, Delta, or a REST API table.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Notebook analyst

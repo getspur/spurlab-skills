@@ -1,8 +1,28 @@
 # spurlab-skills
 
+[![skills.sh](https://skills.sh/b/getspur/spurlab-skills)](https://skills.sh/getspur/spurlab-skills)
+
 Open-source analyst skills for a SpurLab / Jute notebook. The session is the notebook catalog. SQL cells are the dataset definition. One connection uses one attach tool.
 
+Follows the [Agent Skills spec](https://agentskills.io); installable for 80+ agents through the open [skills CLI](https://skills.sh) — Claude Code, Codex, Cursor, OpenCode, Gemini CLI, Copilot, Amp, and more.
+
 ## Install
+
+Any agent, through the skills CLI:
+
+```sh
+npx skills add getspur/spurlab-skills
+```
+
+Target one agent or a subset:
+
+```sh
+npx skills add getspur/spurlab-skills -a claude-code -a codex -a cursor
+npx skills add getspur/spurlab-skills --skill notebook-analyst --skill ggsql-visualize
+npx skills add getspur/spurlab-skills --list
+```
+
+Claude Code plugin marketplace:
 
 ```text
 /plugin marketplace add getspur/spurlab-skills
@@ -10,6 +30,8 @@ Open-source analyst skills for a SpurLab / Jute notebook. The session is the not
 ```
 
 From a clone, point the agent at `skills/`.
+
+Every skill needs a SpurLab or Jute notebook session with the notebook MCP server (`notebook_*` tools) connected.
 
 ## Skills
 

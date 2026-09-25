@@ -3,6 +3,8 @@ name: api-connection
 description: >
   Use when adding a REST API table connection, checking a connection manifest,
   or attaching the Polymarket or RSS shortcut in a SpurLab notebook.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # API connection

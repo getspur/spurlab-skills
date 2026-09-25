@@ -4,6 +4,8 @@ description: >
   Use when a SpurLab datasource is already connected and the task is to
   understand it: find the grain, join keys, date columns, measures, null rates,
   or value ranges before analysis, charts, or promotion.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Explore data

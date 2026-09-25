@@ -3,6 +3,8 @@ name: file-scan
 description: >
   Use when attaching a local CSV, Parquet, JSON, SQLite, or DuckDB file to the
   active SpurLab notebook catalog.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # File scan

@@ -3,6 +3,8 @@ name: catalog-session
 description: >
   Use when the open SpurLab or Jute notebook should be inspected for datasources,
   connections, tables, or ds:// refs before a query.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Catalog session

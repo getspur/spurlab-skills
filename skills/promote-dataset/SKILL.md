@@ -3,6 +3,8 @@ name: promote-dataset
 description: >
   Use when a SpurLab SQL cell should become a named live dataset or a catalog
   ds:// derived relation, without copying rows into a warehouse.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Promote dataset

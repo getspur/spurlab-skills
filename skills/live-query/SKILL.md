@@ -3,6 +3,8 @@ name: live-query
 description: >
   Use when running SQL, or a natural-language question that should become SQL,
   against a datasource already connected in a SpurLab notebook.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Live query

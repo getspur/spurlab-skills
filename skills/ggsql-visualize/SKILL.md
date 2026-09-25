@@ -4,6 +4,8 @@ description: >
   Use when a SpurLab SQL result should also render as a chart in the same cell:
   dual Table|Visualize output through ggsql, from gallery or recipe template to
   a validated run.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # ggsql visualize

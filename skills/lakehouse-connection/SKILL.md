@@ -3,6 +3,8 @@ name: lakehouse-connection
 description: >
   Use when attaching or probing an Iceberg or Delta table or catalog, including
   a REST, Glue, Nessie, or Unity catalog, in a SpurLab notebook.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Lakehouse connection

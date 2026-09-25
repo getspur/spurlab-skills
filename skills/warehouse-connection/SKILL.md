@@ -3,6 +3,8 @@ name: warehouse-connection
 description: >
   Use when attaching Postgres, MySQL, SQL Server, BigQuery, or Snowflake to the
   active SpurLab notebook catalog.
+license: MIT
+compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP server (notebook_* tools).
 ---
 
 # Warehouse connection
