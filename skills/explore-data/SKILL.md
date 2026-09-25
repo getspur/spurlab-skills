@@ -17,7 +17,7 @@ compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP
 1. `notebook_context_pack`, then `notebook_catalog` to the table leaf. The leaf carries the invoke syntax for cells.
 2. One shape cell: `SELECT * FROM <relation> LIMIT 10`, or one table-function page. Read actual values before writing analytics.
 3. One profiling cell per open question, not one sweep:
-   - `SUMMARIZE <relation>` for ranges, cardinality, null rates.
+   - `SUMMARIZE SELECT * FROM <relation>` for ranges, cardinality, null rates. Over a table function use the `SELECT` form — bare `SUMMARIZE read_csv_auto(…)` is a parser error.
    - `COUNT(DISTINCT …)` on candidate keys to test the grain.
    - `min` / `max` on date or timestamp columns to bound the window.
 4. Report the schema map before any analytical SQL: grain, join keys, date columns, likely measures, and any column unsafe to aggregate.
