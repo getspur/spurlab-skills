@@ -12,7 +12,7 @@ compatibility: Requires a SpurLab or Jute notebook session with the notebook MCP
 
 # Tell a data story
 
-**Required:** follow `notebook-analyst`. The numbers come from `live-query` and `sql-patterns`; the charts from `ggsql-visualize`. This skill owns narrative order, chart titling, annotation, and honest framing.
+**Required:** follow `notebook-analyst`. The numbers come from `live-query` and `sql-patterns`; the charts from `ggsql-visualize`; the reader-driven Explore surface from `perspective-explore`. This skill owns narrative order, chart titling, annotation, and honest framing.
 
 ## Arc
 
@@ -46,6 +46,10 @@ Annotate the insight, the outliers, the inflection points, and the events. Do no
 - Show the full relevant window. Focus by highlighting a period, never by trimming the data to flatter the trend.
 - Absolute and relative together: `value` and `pct_change` columns, both charted or labeled.
 - Note limitations in the closing markdown: source, sample, missing data, selection criteria.
+
+## Chart vs Explore
+
+Each evidence cell has two surfaces with one job each: the **Chart** tab is the authored, static insight; the **Explore** tab (Perspective over the Arrow snapshot) is where the reader re-pivots the full honest window. Keep every dimension in the snapshot for Explore, and shape it per `perspective-explore`. The closing markdown may suggest one pivot to try — one, not a tutorial.
 
 ## Pattern matrix
 
