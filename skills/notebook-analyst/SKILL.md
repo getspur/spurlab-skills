@@ -41,4 +41,4 @@ Skip step 2. Continue at `notebook_catalog`. Use `catalog-session` when the ques
 
 ## Query and name
 
-`explore-data` owns the schema map before analytics. `live-query` owns the SQL cell. `sql-patterns` owns the pattern library. `profile-source` owns the leaf schema. `promote-dataset` owns the name. `ggsql-visualize` owns the chart on that cell: `notebook_ggsql_check` before `notebook_run_cell`.
+`explore-data` owns the schema map before analytics. `live-query` owns the SQL cell. `sql-patterns` owns the pattern library. `profile-source` owns the leaf schema. `promote-dataset` owns the name. `ggsql-visualize` owns the chart on that cell: `notebook_ggsql_check` before `notebook_run_cell`. When a sequence of cells should read as a narrative, `tell-data-story` owns the order, titling, annotation, and framing.

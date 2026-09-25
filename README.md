@@ -48,6 +48,7 @@ Every skill needs a SpurLab or Jute notebook session with the notebook MCP serve
 | `live-query` | You have a SQL question or a natural-language question over a connected relation. |
 | `sql-patterns` | You are writing analytical DuckDB SQL: latest-row, top-N, dedup, running totals, YoY, pivot, sampling. |
 | `ggsql-visualize` | A SQL result should also render as a chart in the same cell (dual Table\|Visualize via ggsql). |
+| `tell-data-story` | An analysis should read as a narrative: cell order, insight titles, annotation layers, honest framing, story patterns. |
 | `promote-dataset` | A SQL cell should become a named live dataset. |
 
 Load `notebook-analyst` first. It chooses one sibling for the connection and keeps the later steps on notebook tools.
