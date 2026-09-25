@@ -52,6 +52,15 @@ The closing markdown cell of a story may direct one exploration: "In Explore, gr
 
 Plugin names come from the reader's plugin picker (Datagrid, Y Bar, X Line, Scatter, Heatmap, Treemap, Sunburst, and market-data plugins where loaded) — describe, don't promise an exhaustive registry.
 
+## Frontend cell (agent-authored starting pivot)
+
+The Explore tab default is Datagrid; only the reader configures it. A Deno frontend cell (`spur.anywidget()`) can mount its own `<perspective-viewer>` over an Arrow port and `restore()` a chosen starting view — `plugin`, `group_by`, `split_by`, `columns`, `aggregates`, `settings: true`. Rules:
+
+- Ports are written by `spur.put` (a thin Python publisher cell; SQL cells produce dual-output snapshots, not PortStore entries).
+- Arrow ports → JSON-safe state only: iterate vectors element-wise (`Array.from(table.getChild(name), v => typeof v === "bigint" ? Number(v) : v)`); typed-array `.toArray()` and row proxies fail widget-state serialization (Int64 → BigInt64Array, LargeUtf8).
+- Load Perspective from CDN at the version the app ships (5.5.1) with a visible fallback message; render lives in the browser iframe.
+- One authored pivot that states the story's finding; the reader re-pivots from there.
+
 ## Limits
 
 - Explore never writes back: pivots, filters, and expressions are presentation on the snapshot. A derived relation readers keep asking for belongs in its own cell and `promote-dataset`.
