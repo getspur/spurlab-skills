@@ -22,7 +22,10 @@ From a clone, point the agent at `skills/`.
 | `lakehouse-connection` | The source is an Iceberg or Delta table or catalog. |
 | `api-connection` | The source is a REST provider, or the Polymarket / RSS shortcut. |
 | `profile-source` | You need the schema and a bounded sample of a relation that is already connected. |
+| `explore-data` | You need to understand a connected source: grain, join keys, dates, measures, null rates. |
 | `live-query` | You have a SQL question or a natural-language question over a connected relation. |
+| `sql-patterns` | You are writing analytical DuckDB SQL: latest-row, top-N, dedup, running totals, YoY, pivot, sampling. |
+| `ggsql-visualize` | A SQL result should also render as a chart in the same cell (dual Table\|Visualize via ggsql). |
 | `promote-dataset` | A SQL cell should become a named live dataset. |
 
 Load `notebook-analyst` first. It chooses one sibling for the connection and keeps the later steps on notebook tools.
@@ -33,6 +36,7 @@ Load `notebook-analyst` first. It chooses one sibling for the connection and kee
 - Descend `notebook_catalog` one `ds://` layer at a time.
 - Put the question in a `code_type=sql` cell, then `notebook_run_cell`.
 - Name the result with `notebook_dataset_promote` on that same cell. `copies_bytes` stays false.
+- Chart a result by seeding the cell's `ggsql` metadata from a gallery or recipe template, after `notebook_ggsql_check`.
 - On a failed or stale run, walk `notebook_lineage` from the returned ref.
 
 ## License

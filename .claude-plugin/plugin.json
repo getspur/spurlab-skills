@@ -1,7 +1,7 @@
 {
   "name": "spurlab-skills",
-  "description": "SpurLab notebook analyst skills. Connect a file, warehouse, lakehouse, or REST API through notebook tools, then query and name the live SQL.",
-  "version": "0.1.0",
+  "description": "SpurLab notebook analyst skills. Connect a file, warehouse, lakehouse, or REST API through notebook tools, then explore, query, chart with ggsql, and name the live SQL.",
+  "version": "0.2.0",
   "author": {
     "name": "getspur",
     "url": "https://github.com/getspur"
@@ -21,6 +21,8 @@
     "bigquery",
     "snowflake",
     "rest",
-    "datasource"
+    "datasource",
+    "ggsql",
+    "visualization"
   ]
 }
